@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block main_content %}
+  <div class="hero">
+    <div class="hero-inner">
+      <h1>Video Collector</h1>
+      <h2>Your favorite videos - old school <span class="yahoo">Yahoo!</span> style</h2>
+    </div>
+  </div>
+
+  <div class="container categories">
+
+    {% for row in rows %}
+      <div class="row">
+        <div class="col-md-1"></div>
+
+          {% for c in row %}
+            <div class="col-md-3 category">
+              <a href="{% url 'category' c.name %}"
+                ><img src="{% static 'img/categories/' %}{{ c.image_name }}"
+                  class="img img-responsive" alt=""></a>
+              <div>
+                <span class="title">{{ c.name }}</span> ({{ c | length }})
+              </div>
+            </div>
+          {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+
+{% endblock %}

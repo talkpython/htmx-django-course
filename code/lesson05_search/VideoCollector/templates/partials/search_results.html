@@ -1,0 +1,25 @@
+{% load humanize %}
+{% if videos is not None %}
+  <div class="search-result-count">{{ videos | length }} results</div>
+{% endif %}
+
+<div class="container">
+  {% for video in videos %}
+    <div class="row search-result-row">
+      <div class="video search-result col-md-3 offset-md-2">
+        <a href="{% url 'play_video' video.id %}"
+          ><img src="https://img.youtube.com/vi/{{ video.youtube_id }}/maxresdefault.jpg"
+           class="img img-responsive"
+           alt="{{ video.title }}"
+           title="{{ video.title }}"></a>
+
+      </div>
+      <div class="video search-result col-md-6">
+        <div><a href="{% url 'play_video' video.id %}"
+          class="title">{{ video.title }}</a></div>
+        <div><span class="author">{{ video.author }}</span></div>
+        <div class="views">{{ video.view_count | intcomma }} views</div>
+      </div>
+    </div>
+  {% endfor %}
+</div>

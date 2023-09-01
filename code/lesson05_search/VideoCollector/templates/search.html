@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block main_content %}
+
+<div class="search-inputs">
+  <h1>Search video collector</h1>
+  <input
+      name="search_text"
+      placeholder="Search for a video ..."
+      class="form-control"
+      type="text"
+      value="{{ search_text }}"
+      hx-get="{% url 'search' %}"
+      hx-trigger="keyup[target.value.length > 1] changed delay:500ms"
+      hx-target="#search-results"
+      hx-push-url="true">
+
+</div>
+
+<div class="videos search-results" id="search-results">
+
+  {% include "partials/search_results.html" %}
+
+</div>
+
+{% endblock %}
+
+{% block title %}Search @ Video Collector{% endblock %}

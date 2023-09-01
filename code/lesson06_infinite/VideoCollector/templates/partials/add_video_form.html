@@ -1,0 +1,17 @@
+<form class="video-form fade-me-in fade-me-out"
+    action="{% url 'category' category.name %}" method="POST">
+  {% csrf_token %}
+  <input type="text" class="form-control" id="youtube_id" name="youtube_id"
+    placeholder="YouTube ID" required>
+  <input type="text" class="form-control" id="title" name="title"
+    placeholder="Video title" required>
+  <input type="text" class="form-control" id="author" name="author"
+    placeholder="Video author" required>
+  <input type="number" class="form-control" id="view_count" name="view_count"
+    placeholder="View count" required>
+  <button class="btn btn-success">Create</button>
+  <button class="btn btn-danger"
+      hx-get="{% url 'add_video_link' category.name %}"
+      hx-target=".video-form"
+    >Cancel</button>
+</form>
