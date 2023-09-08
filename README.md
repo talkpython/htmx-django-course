@@ -2,7 +2,7 @@
 
 ### INSERT LINK
 
-** link to course / image goes here **
+<img src="https://training.talkpython.fm/static/course_images/htmx-course2x.jpg" style="width: 600px; border-radius: 5px;" />
 
 ## Course Summary
 
