@@ -1,8 +1,6 @@
 # HTMX + Django: Modern Python Web Apps, Hold the JavaScript
 
-### INSERT LINK
-
-<img src="https://training.talkpython.fm/static/course_images/htmx-course2x.jpg" style="width: 600px; border-radius: 5px;" />
+[<img src="https://training.talkpython.fm/static/course_images/htmx-course2x.jpg" style="width: 600px; border-radius: 5px;" />](https://training.talkpython.fm/courses/htmx-django-modern-python-web-apps-hold-the-javascript)
 
 ## Course Summary
 
@@ -52,13 +50,9 @@ In this course, you will:
 - **Combine htmx with Bootstrap** to take advantage of both frameworks.
 - And lots more
 
-### INSERT LINK
-
-View the full  **course link**
+View the full  **[course link](https://training.talkpython.fm/courses/htmx-django-modern-python-web-apps-hold-the-javascript)**
 
 ## Take the course
 
-### INSERT LINK
-
-Visit the **Talk Python Training course page** to sign up today.
+Visit the Talk Python Training course page to **[sign up today](https://training.talkpython.fm/courses/htmx-django-modern-python-web-apps-hold-the-javascript)**.
 
