@@ -1,6 +1,6 @@
 # HTMX + Django: Modern Python Web Apps, Hold the JavaScript
 
-[<img src="https://training.talkpython.fm/static/course_images/htmx-course2x.jpg" style="width: 600px; border-radius: 5px;" />](https://training.talkpython.fm/courses/htmx-django-modern-python-web-apps-hold-the-javascript)
+[<img src="https://training.talkpython.fm/static/course_images/htmx-django.webp?cacheId=1" style="width: 600px; border-radius: 5px;" />](https://training.talkpython.fm/courses/htmx-django-modern-python-web-apps-hold-the-javascript)
 
 ## Course Summary
 
